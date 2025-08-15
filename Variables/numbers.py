@@ -36,7 +36,29 @@ b = 5
 print("Addition:", a + b)  # Output: Addition: 15
 print("Subtraction:", a - b)  # Output: Subtraction: 5
 print("Multiplication:", a * b)  # Output: Multiplication: 50
-print("Division:", a / b)  # Output: Division: 2.0
+print("Division:", a / b)  # Output: Division: 2.0 floating point division
+print("Floor Division:", a // b)  # Output: Floor Division: 2 integer
+print("Modulus:", a % b)  # Output: Modulus: 0
+print("Exponentiation:", a**b)  # Output: Exponentiation: 100
+print("Square Root:", a**0.5)  # Output: Square Root: 3.1622776601683795
+print("power", a**b)  # Output: power 100000
+# Augmented assignment operators for arithmetic operations.
+a += 5
+print("Augmented Addition:", a)  # Output: Augmented Addition: 15
+b *= 2
+print("Augmented Multiplication:", b)  # Output: Augmented Multiplication: 10
+# Augmented division
+a /= 2
+print("Augmented Division:", a)  # Output: Augmented Division: 7.5
+# Augmented floor division
+b //= 3
+print("Augmented Floor Division:", b)  # Output: Augmented Floor Division: 3
+# Augmented modulus
+a %= 3
+print("Augmented Modulus:", a)  # Output: Augmented Modulus: 1.5
+# Augmented exponentiation
+b **= 2
+print("Augmented Exponentiation:", b)  # Output: Augmented Exponentiation: 9
 
 # 5. Type Conversion
 # Converting between different numeric types.
@@ -51,6 +73,40 @@ print("Converted to String:", str_value)  # Output: Converted to String: '10'
 print("Absolute Value:", abs(-10))  # Output: Absolute Value: 10
 print("Rounded Value:", round(5.678, 2))  # Output: Rounded Value: 5.68
 print("Power:", pow(2, 3))  # Output: Power: 8
+
+# 6.1 Using math module for advanced number functions
+import math
+
+print(
+    "Square Root using math module:", math.sqrt(16)
+)  # Output: Square Root using math module: 4.0
+print(
+    "Factorial using math module:", math.factorial(5)
+)  # Output: Factorial using math module: 120
+print(
+    "Logarithm using math module:", math.log(100, 10)
+)  # Output: Logarithm using math module: 2.0
+print(
+    "Ceiling using math module:", math.ceil(5.1)
+)  # Output: Ceiling using math module: 6
+print("Floor using math module:", math.floor(5.9))  # Output: Floor using math module: 5
+# For additional mathematical functions, you can explore the math module documentation. Link: https://docs.python.org/3/library/math.html
+
+# 6.2 Using built-in functions for number properties
+print("Is 10 an integer?", isinstance(10, int))  # Output: Is 10 an integer? True
+print("Is 3.14 a float?", isinstance(3.14, float))  # Output: Is 3.14 a float? True
+print(
+    "Is 3 + 4j a complex number?", isinstance(3 + 4j, complex)
+)  # Output: Is 3 + 4j a complex number? True
+
+# 6.3 Using built-in functions for number properties
+print("Is 10 positive?", 10 > 0)  # Output: Is 10 positive? True
+print("Is -5 negative?", -5 < 0)  # Output: Is -5 negative? True
+print("Is 0 zero?", 0 == 0)  # Output: Is 0 zero? True
+print("Is 3.14 a float?", isinstance(3.14, float))  # Output: Is 3.14 a float? True
+print(
+    "Is 3 + 4j a complex number?", isinstance(3 + 4j, complex)
+)  # Output: Is 3 + 4j a complex number? True
 
 # 7. Number Formatting
 # Formatting numbers for output, including fixed-point notation and scientific notation.
